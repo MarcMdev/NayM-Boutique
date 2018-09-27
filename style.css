@@ -1,0 +1,234 @@
+/* * {
+    border: 1px solid yellow;
+} */
+html {
+	height: 100%;
+	width:100vw;
+    
+}
+body {
+	height: auto;
+	width: 100%;
+	margin: 0;
+	background: linear-gradient(to left, rgb(221, 111, 210), #6C4D69);
+}
+
+/* Depth */
+.depth {
+	margin: 0 20px;
+	padding: 5% 10%;
+	color: #6C4D69;
+	background: #FFFCFE;
+	border-bottom: 1px solid #707070;
+	box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.507), inset 2px 0 10px rgba(0, 0, 0, 0.541);
+	border-radius: 7px;
+}
+/* Pop-Up */
+.pop {
+	background: #FFFCFE;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid rgb(136, 134, 134);
+	/* border-bottom: 1px solid rgb(136, 134, 134);
+	border-right: 1px solid rgb(131, 130, 130); */
+	box-shadow: 5px 5px 4px #6C4D69;
+}
+/* Navbar Customization */
+.navbar {
+	/* DISPLAY */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+	/* ====================== */
+	background-color: white;
+	height: 40px;
+	width: 100vw;
+	margin: auto;
+	padding: 0 10%;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+	.navbtn {
+		color: #6C4D69;
+		font-family: 'Titillium Web', sans-serif;
+		text-decoration: none;
+		font-size:  1.2rem;
+		transition: all 0.2s;
+		height: 100%;
+		border: none;
+		box-sizing: border-box;
+		padding: 0 10px;
+		padding-top: 5px;
+	}
+
+	.navbtn:hover{
+		color: #FFFCFE;
+		background: #6C4D69;
+	}
+
+/* ------------ LOGO ---------- */
+	#logo {
+		width: 120px;
+		height: 100%;
+		color: #FFFCFE;
+		background: #6C4D69;
+		font-family: Quicksand, sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+/* ========================================= */
+/* --------------- HEADER ------------------- */
+header {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: url(imgs/header.jpg);
+	background-size: cover;
+	background-position: center;
+}
+/* ======================================== */
+
+/* ------------ CONTAINER ------------*/
+.container {
+	/* display settings */
+	display:grid;
+	grid-template-columns: 80%;
+	grid-row-gap: 40px;
+	justify-content: center;
+	box-sizing: border-box;
+	/* ================== */
+	height: 100%;
+	margin: 0;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+/* --------- ABOUT US---------- */
+#lglogo {
+	font-size: 6rem;
+	font-family: Quicksand, sans-serif;
+}
+#title {
+	font-size: 2rem;
+}
+#desc {
+	font-family: Montserrat, sans-serif;
+	text-align: justify;
+	font-size: 1em
+}
+
+#name {
+	text-decoration: underline;
+}
+/* ====================================== */
+/* ------------ HOW IT WORKS------------ */
+.how {
+	font-family: Montserrat, sans-serif;
+	font-size: 1em;
+}
+	.how p {
+		font-size: 1.2em;
+	}
+/* ========================================== */
+/* ========================================= */
+
+/* ------------- GALLERY -------------- */
+.galhead {
+	color: #6C4D69;
+	text-align: center;
+	font-family: Quicksand, sans-serif;
+	font-size: 4em;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+#galhr {
+	width: 60%;
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: linear-gradient(to right, #FFFCFE, #6C4D69, #FFFCFE);
+
+}
+.gallery {
+    /* Display Settings */
+    display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+    /* ====================== */
+    padding: 0.5vw;
+		height: fit-content;
+		font-size: 0;
+}
+.gallery h2 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+}
+
+.frame {
+	flex: auto;
+	width: 250px;
+	margin: 0.5vw;
+	padding: 0;
+}
+	.frame img{
+		height: auto;
+		width: 100%;
+		margin: 0;
+	}
+/* --------------Frame-------------- */
+
+/* ============================================= */
+/* ============================================= */
+/* --------------- CONTACT US ------------ */
+footer {
+	font-family: Quicksand, sans-serif;
+	margin: auto;
+	color: #6C4D69;
+	padding: 20px 30px;
+	font-size: 1.3em;
+	box-sizing: border-box;
+	height: auto;
+	width: 100%;
+}
+
+#contact {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+#contact p {
+	margin: 0;
+}
+/* ========================================= */
+
+
+/* -------------- media queries ----------- */
+@media(max-width: 910px){
+    .linktext {
+        display: none;
+    }
+    #contack{
+        display: block;
+    }
+}
+@media(max-width: 800px){
+    #contact{
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+	.frame {margin: 0}
+	.frame img {margin: 0}
+}
+/* ====================================== */
