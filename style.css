@@ -4,7 +4,7 @@
 html {
 	height: 100%;
 	width:100vw;
-    
+	overflow: auto;
 }
 body {
 	height: auto;
@@ -100,10 +100,10 @@ header {
 		margin: 0;
 		text-shadow:
 		/**/
-		0 1px 0 rgb(0, 0, 0),
-		0 2px 0 rgb(0, 0, 0),
-		0 3px 0 rgb(0, 0, 0),
-		0 4px 0 rgb(0, 0, 0),
+		0 1px 0 rgb(158, 154, 154),
+		0 2px 0 rgb(145, 144, 144),
+		0 3px 0 rgb(94, 91, 91),
+		0 4px 0 rgb(75, 74, 74),
 		0 5px 0 rgb(0, 0, 0);
 	}
 		#upper{
@@ -224,10 +224,33 @@ header {
 
 /* ====================== */
 /* ---- FULL GALLERY --- */
-#full-gallery {
-	display: hidden;
-
+.full-gallery {
+	/* display: none; */
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	top: 0; left: 0;
+	width: 100vw; height: 100vh;
+	background: rgba(43, 42, 42, 0.74);
 }
+	.full-gallery img {
+		height: 100vh;
+		width: auto;
+	}
+	.slide-btn {
+		position: absolute;
+		width: 40px; height: 40px;
+	}
+		#slide-left {
+			top: calc(50vh - 20px);
+			left: 0;
+		}
+		#slide-right {
+			top: calc(50vh - 20px);
+			right: 0;
+		}
+
+
 /* ========================= */
 /* ============================================= */
 /* --------------- CONTACT US ------------ */
